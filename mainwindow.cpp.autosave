@@ -41,8 +41,6 @@ void MainWindow::resp_countries(QByteArray resp)
 
       }
 
-}
-
 void MainWindow::resp_summary(QByteArray resp)
 {
     // То создаём объект Json Document, считав в него все данные из ответа
@@ -62,4 +60,5 @@ void MainWindow::resp_summary(QByteArray resp)
         int wrld_issues=global.value("NewConfirmed").toInt();
         QJsonObject a= global.value("NewConfirmed").toObject();
         ui->lcdNumber_world->display(world_issues);
+}
 }

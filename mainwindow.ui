@@ -6,154 +6,92 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>612</width>
-    <height>385</height>
+    <width>800</width>
+    <height>600</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QHBoxLayout" name="horizontalLayout">
-    <item>
-     <layout class="QVBoxLayout" name="verticalLayout">
-      <item>
-       <widget class="QGroupBox" name="groupBox_BShelf">
-        <property name="title">
-         <string>Шкафы</string>
-        </property>
-        <layout class="QVBoxLayout" name="verticalLayout_4">
-         <item>
-          <widget class="QListWidget" name="listWidget_BShelfs"/>
-         </item>
-         <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_2">
-           <item>
-            <widget class="QPushButton" name="pushButton_addBShelf">
-             <property name="text">
-              <string>Добавить</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QPushButton" name="pushButton_delBShelf">
-             <property name="text">
-              <string>Удалить</string>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </item>
-        </layout>
-       </widget>
-      </item>
-     </layout>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="1" column="0">
+     <widget class="QLineEdit" name="Countries">
+      <property name="maximumSize">
+       <size>
+        <width>400</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>По миру</string>
+      </property>
+     </widget>
     </item>
-    <item>
-     <layout class="QVBoxLayout" name="verticalLayout_2">
-      <item>
-       <widget class="QGroupBox" name="groupBox_Shelf">
-        <property name="title">
-         <string>Полки</string>
-        </property>
-        <layout class="QVBoxLayout" name="verticalLayout_5">
-         <item>
-          <widget class="QListWidget" name="listWidget_Shelfs"/>
-         </item>
-         <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_3">
-           <item>
-            <widget class="QPushButton" name="pushButton_addSelf">
-             <property name="text">
-              <string>Добавить</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QPushButton" name="pushButton_delShelf">
-             <property name="text">
-              <string>Удалить</string>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </item>
-        </layout>
-       </widget>
-      </item>
-     </layout>
+    <item row="0" column="0">
+     <widget class="QLineEdit" name="Data">
+      <property name="maximumSize">
+       <size>
+        <width>400</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Дата</string>
+      </property>
+     </widget>
     </item>
-    <item>
-     <layout class="QVBoxLayout" name="verticalLayout_3">
-      <item>
-       <widget class="QGroupBox" name="groupBox_Books">
-        <property name="title">
-         <string>Книги</string>
-        </property>
-        <layout class="QVBoxLayout" name="verticalLayout_6">
-         <item>
-          <widget class="QListWidget" name="listWidget_Books"/>
-         </item>
-         <item>
-          <widget class="QLabel" name="label">
-           <property name="text">
-            <string>Автор</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLineEdit" name="lineEdit_author"/>
-         </item>
-         <item>
-          <widget class="QLabel" name="label_2">
-           <property name="text">
-            <string>Название</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLineEdit" name="lineEdit_name"/>
-         </item>
-         <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_4">
-           <item>
-            <widget class="QLabel" name="label_3">
-             <property name="text">
-              <string>Страницы</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QSpinBox" name="spinBox_pages">
-             <property name="maximum">
-              <number>5000</number>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </item>
-         <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_5">
-           <item>
-            <widget class="QPushButton" name="pushButton_addBook">
-             <property name="text">
-              <string>Добавить</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QPushButton" name="pushButton_delBook">
-             <property name="text">
-              <string>Удалить</string>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </item>
-        </layout>
-       </widget>
-      </item>
-     </layout>
+    <item row="6" column="0" colspan="3">
+     <widget class="QPushButton" name="pb_request">
+      <property name="text">
+       <string>Запрос</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0" colspan="3">
+     <widget class="QTextEdit" name="textEdit"/>
+    </item>
+    <item row="0" column="1" colspan="2">
+     <widget class="QDateEdit" name="dateEdit">
+      <property name="displayFormat">
+       <string>yyyy-MM-dd</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLineEdit" name="Russia">
+      <property name="maximumSize">
+       <size>
+        <width>400</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>По России</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLineEdit" name="Moscow">
+      <property name="maximumSize">
+       <size>
+        <width>400</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>По Москве</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1" colspan="2">
+     <widget class="QLCDNumber" name="WorldNumber"/>
+    </item>
+    <item row="3" column="1" colspan="2">
+     <widget class="QLCDNumber" name="RussiaNumber"/>
+    </item>
+    <item row="4" column="1" colspan="2">
+     <widget class="QLCDNumber" name="MoscowNumber"/>
     </item>
    </layout>
   </widget>
@@ -162,30 +100,12 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>612</width>
+     <width>800</width>
      <height>21</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menu">
-    <property name="title">
-     <string>Файл</string>
-    </property>
-    <addaction name="action"/>
-    <addaction name="action_2"/>
-   </widget>
-   <addaction name="menu"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
-  <action name="action">
-   <property name="text">
-    <string>Сохранить</string>
-   </property>
-  </action>
-  <action name="action_2">
-   <property name="text">
-    <string>Открыть</string>
-   </property>
-  </action>
  </widget>
  <resources/>
  <connections/>
